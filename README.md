@@ -1,4 +1,4 @@
-1140skeleton
+1140grid
 ============
 
-1140, 960, 768, 480, 320 pixel wide grid system
+1140 pixel wide grid system that is fluid and responsive from desktops & laptops, tablets and smartphones.

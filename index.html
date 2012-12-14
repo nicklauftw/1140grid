@@ -7,8 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/gist.css">
         <link rel="stylesheet" href="css/1140.css">
 
     </head>
@@ -16,33 +17,193 @@
     <body>
 
         <div class="container">
-            <section class="row clearfix">
-                <header class="twelve columns">
-                    <h1>1140 Skeleton</h1>
-                </header>
-            </section>
 
-            <section class="row clearfix">
-                <article class="six columns">
+            <header class="row">
+                <div class="twelve columns">
+                    <h1 class>1140 Grid</h1>
+                    <h6 id="desktop" class="mode">Desktop &amp; Wide Landscape Portrait View</h6>
+                    <h6 id="tablet"class="mode">Tablet Portrait View</h6>
+                    <h6 id="phone"class="mode">Phone View</h6>
+            </header>
+
+            <section class="row">                
+
+                <article class="seven columns">
+                    <h2>Design</h2>
+                    <p>
+                        This is a twelve columns CSS grid system.  It is not a be all, end all grid solution but it is to help you quickly generate a structured layout for desktop, tablet and smartphones.  By using relative perecentage width for the columns, this grid accommodates a variety of devices and their pixel densities. Font sizes will have to be tinkered so that it looks and feels right and at the ideal 50 to 80 character count per line.
+                    </p>
+
                     <h2>Purpose</h2>
                     <p>
-                        Yet annother responsive CSS grid framework.  Plenty of other responsive CSS grids to choose from such as Bootstrap, Zurb and Skeleton that do a mighty fine job and are highly refined but this one is mine for the purpose of building my own grid system to better improve my own skills.
+                        To reinvent the wheel in a sense.  There are plenty of CSS grid system frameworks out there that are fixed, fluid, responsive or a combination.  I wrote my own to build my own to build my skills, to further my understanding of fluid and responsive design and media queries.  Besides understanding technical challenges of layouts for multiple types of devices, there is also the content strategy challenge.
+                    </p>
+
+                    <h2>Future</h2>
+                    <p>
+                        I will be using this in framework in my projects and hopefully others will, too and provide feedback and contribute.  With retina or pixel dense display devices becoming more popular, this grid will have to be continually   Eventually, I will create a SASS version of this to use variables to make the grid width more configurable and DRY up the code.  The documentation and usage will probably have to be improved upon.
                     </p>
                 </article>
 
-                <article class="six columns">
+                <aside class="four columns offset-by-one">
                     <h2>About the Author</h2>
+                    <img src="img/me.png" alt="me" />
                     <p>
-                        I'm Nick Lau, a user interface designer and developer living in Wicker Park, Chicago. I enjoy designing and developing lovely experiences.
+                        I'm Nick Lau, an interface designer and front end developer in Chicago.  I love Swiss design and tea.                      
                     </p>
-                </article>
+                    <p>
+                        Follow me <a href="http://www.twitter.com/nicklauftw" target="_blank">@nicklauftw</a>
+                    </p>
+                </aside>              
+
             </section>
 
-            <section class="row clearfix">
+            <section class="row">
                 <div class="twelve columns">
-                    <h2>Usage</h2>
+                    <h2>Demo <span class="amp">&amp;</span> Usage</h2>
+                    <script src="https://gist.github.com/4262919.js"></script>
+                    <h4>Columns</h4>
                 </div>
 
+                <div class="twelve columns demo">
+                    12
+                </div>                
+            </section>        
+
+            <section class="row">
+                <div class="four columns demo">
+                    4
+                </div>
+
+                <div class="eight columns demo">
+                    8
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="five columns demo">
+                    5
+                </div>
+
+                <div class="seven columns demo">
+                    7
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="six columns demo">
+                    6
+                </div>
+
+                <div class="six columns demo">
+                    6
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="four columns demo">
+                    4
+                </div>
+
+                <div class="four columns demo">
+                    4
+                </div>
+
+                <div class="four columns demo">
+                    4
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+
+                <div class="one column demo">
+                    1
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="twelve columns demo">
+                    Nested Columns
+                    <div class="row">
+                        
+                        <div class="six columns demo">
+                            Nested 6 Columns
+                            
+                            <div class="row">
+                                <div class="six columns demo">
+                                    6                           
+                                </div>
+
+                                <div class="six columns demo">
+                                    6                           
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="six columns demo">
+                            Nested 6 Columns
+
+                            <div class="row">
+                                <div class="four columns demo">
+                                    4                           
+                                </div>
+
+                                <div class="four columns demo">
+                                    4                           
+                                </div>
+
+                                <div class="four columns demo">
+                                    4                           
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </section>
 
 

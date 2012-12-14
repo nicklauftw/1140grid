@@ -49,13 +49,46 @@ textarea {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+    #desktop    { display: block; }
+    #tablet     { display: none; }
+    #phone      { display: none; }
 
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    #desktop    { display: none; }
+    #tablet     { display: block; }
+    #phone      { display: none; }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #desktop    { display: none; }
+    #tablet     { display: none; }
+    #phone      { display: block; }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
     /* Future proofing for retina displays */
+}
+
+.row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.demo {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #ededed;
+    outline: 1px #ccc solid;
+}
+
+/* Fancy ampersand */
+.amp {
+    font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+    font-style: italic;
+    font-weight: normal;
 }
 
 /* ==========================================================================
@@ -106,16 +139,15 @@ textarea {
     visibility: hidden;
 }
 
-.clearfix:before,
-.clearfix:after {
+.row, .row:before, .row:after, .clearfix:before, .clearfix:after {
     content: " ";
     display: table;
 }
 
-.clearfix:after {
+.row:after, .clearfix:after {
     clear: both;
 }
 
-.clearfix {
+.row, .clearfix {
     *zoom: 1;
 }
