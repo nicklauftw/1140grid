@@ -1,0 +1,8 @@
+.gist span, .gist pre {
+  margin: .5em 0;  
+}
+
+.gist-data {
+  background: #222;
+  color: #222;  
+}
